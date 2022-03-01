@@ -15,7 +15,7 @@ body {
 #container {
     width: 100%;
     position: absolute;
-    top: 22%;
+    top: 21%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -61,5 +61,23 @@ header{
 
 .fa-plus{
     padding: 15px;
+}
+
+.todoIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.todoIn input{
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: poppins;
 }
 
