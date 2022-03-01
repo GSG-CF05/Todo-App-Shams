@@ -1,8 +1,8 @@
 # Todo-App-Shams
 
-<h1>My Todo App Project</h1>
+## My Todo App Project
 
-## The live link to visit [HERE]()
+### The live link to visit [HERE](https://gsg-cf05.github.io/Todo-App-Shams/)
 
 ## Project description:
 
@@ -15,4 +15,5 @@ The user will be able to add his to-do to the list and save it in local storage,
 ## How do I get the project on my local machine?
 
 ## Team members:
-Shams Elkhoudary
+
+- Shams Elkhoudary (https://github.com/shamskhodary)
