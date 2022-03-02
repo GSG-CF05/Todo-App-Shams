@@ -12,17 +12,19 @@
     <title>Todo list App</title>
   </head>
   <body>
-    <div id="container">
+    <div id="coloring">
       <span class="dates">Friday</span>
       <span class="dates">4 May</span>
       <header>My <b>ToDo</b> List</header>
-      <hr />
-      <div class="add-list">
+    </div>
+    <div id="container">
+      <form class="add-list">
+        <input type="text" placeholder="Add a new to do..." class="todo-input">
         <i class="fas fa-plus"></i>
-      </div>
-      <span class="addToList">Add List</span>
-
+      </form>
+      <div class="List">
       <ul class="todoList"></ul>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

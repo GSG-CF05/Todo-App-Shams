@@ -1,83 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins;
 }
 
 body {
   width: 100%;
-  background-color: #f8f8fa;
+  background-color: #fff;
+  
+}
+
+#coloring{
+    padding: 20px 0px;
+    background-color: #1b75a8;
+    border-radius: 5px;
+}
+.dates {
+  display: flex;
+  padding-left: 30px;
+  font-weight: 600;
+}
+/*---- Header----*/
+header {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/*-----Icon-----*/
+.add-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.add-list i {
+  cursor: pointer;
+  background-color: #1b75a8;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.fa-plus {
+  padding: 15px;
+}
+
+.add-list input {
+  text-align: center;
+  height: 50px;
+  width: 200px;
+  border: black;
+  border-radius: 10px;
+  padding-right: 10px;
+  font-size: 14px;
   font-family: poppins;
 }
 
-#container {
-    width: 100%;
-    position: absolute;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.dates{
-display: flex;
-padding-left: 30px;
-font-weight: 600;
-}
-/*---- Header----*/ 
-header{
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-/*-----Icon-----*/
-.add-list{
+.List{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 40px;
+    padding-top: 35px;
     
 }
 
-.addToList{
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-    padding-top: 5px;
+.todoList li {
+  display: flex;
+  height: 45px;
+  width: 250px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #67a1c2;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: default;
+  font-size: 20px;
 }
-
-
-.add-list i {
-    cursor: pointer;
-    background-color:#fff;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-    border: 2px solid gray;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.fa-plus{
-    padding: 15px;
-}
-
-.todoIn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.todoIn input{
-    text-align: center;
-    height: 50px;
-    width: 200px;
-    border: none;
-    border-radius: 10px;
-    padding-right: 10px;
-    font-size: 14px;
-    font-family: poppins;
-}
-
