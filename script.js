@@ -5,6 +5,7 @@ const editBtn = document.querySelector(".new-btn1");
 
 todoIcon.addEventListener("click", clickOnPlus);
 todoList.addEventListener("click", deleteElement);
+// editBtn.addEventListener("click", editText);
 document.addEventListener("DOMContentLoaded", getTodoListOnLoad);
 
 //* Click on plus button
@@ -36,6 +37,7 @@ function clickOnPlus(e) {
   }
 }
 
+//* Edit an item in the list
 //* Save to local storage
 function saveToLS(value) {
   let todoTasks = JSON.parse(localStorage.getItem("todos"));
@@ -49,45 +51,12 @@ function saveToLS(value) {
   }
 }
 
-//* Remove and Edit an item from the list
+//* Remove an item from the list
 function deleteElement(e) {
   if (e.target.classList.contains("new-btn2")) {
     e.target.parentElement.remove();
     let value = e.target.parentElement.textContent;
     deleteFromLocalStorage(value);
-
-    //*Edit an element in the list
-  } else if (e.target.classList.contains("new-btn1")) {
-    const input = document.createElement("input");
-    let tdDiv = e.target.parentElement; 
-    // console.log(tdDiv);
-    tdDiv.appendChild(input)
-    // console.log(input); 
-    //*************/
-    input.type = "text";
-    input.setAttribute("class", "input")
-    let getTxt = e.target.parentElement.firstElementChild.textContent;
-    input.value = getTxt;
-    // console.log(getTxt);
-    /*************/
-    tdDiv.insertBefore(input, tdDiv.children[0]);
-    tdDiv.removeChild(tdDiv.children[1]);
-
-    // Change edit to save
-    tdDiv.children[1].textContent = "Save";
-
-    // Back to edit btn
-  } else if (e.target.parentElement.children[1].textContent === "Save") {
-    const input = e.target.parentElement.children[0];
-    const addLi = document.createElement("li");
-    let createDiv = e.target.parentElement;
-    console.log(createDiv); 
-    createDiv.appendChild(addLi)
-    addLi.textContent = input.value;
-    createDiv.insertBefore(addLi, input);
-    createDiv.removeChild(input);
-    createDiv.children[1].textContent = "Edit";
-
   }
 }
 
@@ -123,6 +92,7 @@ function getTodoListOnLoad() {
       addBtn.textContent = "Remove";
       addBtn.classList.add("new-btn2");
       todoDiv.appendChild(addBtn);
+
     });
   }
 }
